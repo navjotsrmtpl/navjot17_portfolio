@@ -12,7 +12,7 @@ function Navbar() {
                 <Link to="about" className="desktopMenuListItem" smooth={true} duration={500} offset={-60}>About</Link>
                 <Link to="experience" className="desktopMenuListItem" smooth={true} duration={500} offset={-60}>Experience</Link>
                 <Link to="projects" className="desktopMenuListItem" smooth={true} duration={500} offset={-60}>Projects</Link>
-                <Link to="projects" className="desktopMenuListItem" smooth={true} duration={500} offset={-60}>Skills</Link>
+                <Link to="skills" className="desktopMenuListItem" smooth={true} duration={500} offset={-60}>Skills</Link>
                 <Link to="contact" className="desktopMenuListItem" smooth={true} duration={500} offset={-60}>Contact</Link>
             </div>
             {/* <button className='desktopMenuBtn'>
