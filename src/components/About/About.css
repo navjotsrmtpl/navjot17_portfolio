@@ -1,0 +1,30 @@
+
+.about_box{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+   
+}
+
+.border_box{
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 100%;
+    flex: 1;
+    margin: 0 10px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+.font-wt{
+    font-weight: bold;
+}
+.pad_txt{
+    padding: 0.2rem 0;
+}
+
+
+
+

@@ -1,0 +1,17 @@
+.contact_section{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 2rem;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#contact{
+    padding: 1rem;
+    /* margin: 0 25rem; */
+}
+
+.pading_txt{
+    padding: 0.3rem;
+    cursor: pointer;
+}

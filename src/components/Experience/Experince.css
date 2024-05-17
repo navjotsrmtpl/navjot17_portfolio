@@ -1,0 +1,26 @@
+.wattmonk{
+    display: flex;
+    align-items: center;
+     
+}
+img{
+    margin: 0;
+}
+
+.exp_title{
+    padding: 0 4rem;
+}
+
+#experience{
+    margin-top: 4rem;
+}
+
+
+.border_box_exp{
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+

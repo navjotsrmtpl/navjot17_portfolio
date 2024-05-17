@@ -1,0 +1,26 @@
+.carousel-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    width: 100%;
+    padding: 20px 0;
+    scroll-behavior: smooth; /* Optional: Smooth scrolling */
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure last card doesn't have right margin */
+.card:last-child {
+    margin-right: 0;
+}
+.text_center{
+    text-align: center;
+}

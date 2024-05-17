@@ -1,0 +1,34 @@
+.project_box {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin-bottom: 20px; /* Add margin to bottom for better spacing */
+}
+
+.border_box_project {
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 300px; /* Fixed width for each card */
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent shrinking beyond fixed width */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.project_title {
+    margin-top: 10px; /* Add margin to top for better spacing */
+}
+
+.project_title a {
+    word-wrap: break-word; /* Wrap long URLs */
+}
+
+/* Hide scrollbar */
+.project_box::-webkit-scrollbar {
+    display: none;
+}
+
+/* Optional: Hide scrollbar in Firefox */
+.project_box {
+    scrollbar-width: none;
+}
