@@ -18,6 +18,24 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
 }
 
+@media screen and (max-width:768px) {
+
+    #about{
+        display: block;
+        margin: 4rem 0px 10px 0px;
+    }
+
+    .about_box{
+        display: block;
+        margin: 0 10px;
+    }
+
+    .border_box{
+        margin: 0px 0px 10px 0px;
+    }
+    
+}
+
 .font-wt{
     font-weight: bold;
 }

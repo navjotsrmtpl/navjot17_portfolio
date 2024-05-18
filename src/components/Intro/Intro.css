@@ -74,3 +74,79 @@
     margin: 10px;
   }
 
+  .btnContainer{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn{
+    padding: 0.8rem;
+    border-radius: 3rem;
+    background: #111;
+    color: #fff;
+    width: 14rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section__pic-container img{
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+      margin: auto 0;
+     
+    }
+    .section__text__p1 {
+      font-size: 18px;
+      text-align: center;
+      color: rgb(85, 85, 85);
+    }
+    .section__text{
+      font-size: 18px;
+      align-self: center;
+      margin-top: 2rem;
+    }
+    .title{
+      font-size: 26px;
+      text-align: center;
+    }
+  
+    .designation{
+      font-size: 18px;
+      text-align: center;
+      color: rgb(85, 85, 85);
+    }
+
+    .btnContainer{
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .btn{
+      width: 8rem;
+      font-size: 12px;
+      padding: 10px;
+    }
+
+    .icon{
+      height: 30px;
+    width: 30px;
+    margin: 5px;
+    }
+
+    #intro{
+      height: 44vh;
+      display: contents;
+      margin: 4rem 10px 0px 10px;
+    }
+
+    .section__pic-container{
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+
+
+

@@ -24,3 +24,19 @@
 .text_center{
     text-align: center;
 }
+
+@media screen and (max-width:768px) {
+
+    #skills{
+        margin: 4rem 10px 0px 10px;
+    }
+
+    .carousel-container{
+        display: block;
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    margin: 0 0 10px 0;
+    }
+}

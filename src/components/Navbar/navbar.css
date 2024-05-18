@@ -1,58 +1,131 @@
+/* Navbar.css */
 .navbar {
-    height: 5rem;
-    width: 100vw;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    background: #fff;
-    z-index: 3;
-  }
+  /* background: #333; */
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  z-index: 1;
+  width: 100%;
+  /* max-width: 1000px; */
+  padding: 0 20px;
+  font-size: 26px;
+}
+.nav-item:hover{
   
-  .name {
-    font-size: 3rem;
-  }
-  
-  .nav-toggle {
+  margin-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #3d3939 ;
+}
+.nav-item a:hover{
+  color: #3d3939;
+
+}
+
+.navbar-logo {
+  /* color: #fff; */
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  color: #111;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+  list-style: none;
+  text-align: center;
+  /* width: 60vw; */
+  justify-content: end;
+  /* margin-right: 2rem; */
+}
+
+.nav-item {
+  height: 60px;
+}
+
+.nav-item a {
+  color: #111;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.8rem;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-  
-  .nav-toggle i {
-    font-size: 2rem;
-  }
-  
-  .desktopMenu {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .desktopMenuListItem {
-    margin: 1rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-  
-  .desktopMenuListItem:hover {
-    color: #0f0f0f;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid #505050;
-  }
-  
-  .desktopMenu.active {
+
+  .nav-menu {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%;
-    background-color: #fff;
-    padding: 1rem;
-    z-index: 2;
+    height: 90vh;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: #111;
   }
+  .nav-item a {
+    color: #fff;
   
+  }
+  .nav-item a:hover{
+    color: #fff;
+  
+  }
+
+  .nav-item:hover{
+  
+    margin-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #fff ;
+    color: #fff;
+  }
+
+  
+
+  .nav-menu.active {
+    background: #111;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: #fff;
+  }
+  .navbar-logo,.menu-icon{
+    font-size: 1rem;
+  }
+}

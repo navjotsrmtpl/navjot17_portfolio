@@ -9,14 +9,14 @@ function Intro() {
 
     const handleDownload = () => {
         // Path to the PDF file in the public folder
-        const pdfPath = '../../../public/Navjot2024_Angular.pdf';
+        const pdfPath = 'https://github.com/navjotsrmtpl/navjot17_portfolio/raw/gh-pages/Navjot2024_Angular.pdf';
 
         // Create a link element
         const link = document.createElement('a');
         // Set the href attribute to the PDF path
         link.href = pdfPath;
         // Set the download attribute to force download
-        link.setAttribute('download', 'filename.pdf');
+        link.setAttribute('download', 'navjot.pdf');
         // Hide the link
         link.style.display = 'none';
         // Append the link to the body
@@ -56,6 +56,9 @@ function Intro() {
                 <p className='section__text__p1'>Hello, I'm</p>
                 <h1 className='title'>Navjot Singh</h1>
                 <p className='designation'>Senior UI Developer</p>
+                <div className='btnContainer'>
+                    <button className='btn' onClick={handleDownload}>Download CV</button>
+                </div>
                 <div className='socials-container'>
                     <img src={linkdin} alt='linkdin' className="icon" onClick={() => handleSocialIcons('linkdin')} />
                     <img src={github} alt='github' className="icon" onClick={() => handleSocialIcons('github')} />

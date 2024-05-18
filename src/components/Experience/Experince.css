@@ -24,3 +24,20 @@ img{
     justify-content: space-between;
 }
 
+@media screen and (max-width:768px) {
+
+    #experience{
+        margin: 4rem 10px 0px 10px;
+    }
+
+    .wattmonk{
+        font-size: 12px;
+    }
+    .exp_title{
+        font-size: 12px;
+        padding: 0 1rem;
+    }
+
+    
+}
+
