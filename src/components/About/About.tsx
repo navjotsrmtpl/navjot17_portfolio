@@ -10,7 +10,7 @@ function About() {
             <div className='about_box'>
                 <div className="border_box">
                     <FontAwesomeIcon icon={faAward} />
-                    <h3>Experince</h3>
+                    <h3>Experience</h3>
                     <p className='pad_txt'>6 Years</p>
                     <p className='pad_txt'>UI Development and Hybrid Mobile App</p>
                 </div>
