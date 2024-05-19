@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Project.css'
 
 function Project() {
@@ -9,6 +9,12 @@ function Project() {
         newFlippedCards[index] = !newFlippedCards[index];
         setFlippedCards(newFlippedCards);
     };
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFlippedCards(prevFlippedCards => prevFlippedCards.map(card => !card));
+        }, 5000); // Change the interval time as needed (in milliseconds)
+        return () => clearInterval(interval);
+    }, []); // Run effect only once when component mounts
 
     const projects = [
         {
