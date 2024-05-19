@@ -11,3 +11,27 @@ section{
       font-size: 2rem;
     }
 }
+
+/* #light{
+  background-color: red;
+}
+
+#dark{
+  background-color: blue;
+} */
+
+/* default light theme */
+body.light {
+  *{
+    background-color: white !important;
+    color: black !important;
+  }
+}
+/* dark theme */
+body.dark {
+  *{
+    background-color: black !important;
+    color: white !important;
+  }
+}
+

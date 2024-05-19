@@ -1,20 +1,23 @@
 // Navbar.js
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-scroll';
 import './navbar.css';
+import { ThemeContext, useTheme } from '../context/ThemeProvider';
+import ToggleSwitch from '../ToggleSwitch/ToggleSwitch';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const { theme, toggleTheme } = useTheme();
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
     };
 
     return (
-        <nav className="navbar">
+        <nav className="navbar" >
             <div className="navbar-container">
                 <div className="navbar-logo">
                     <h1>Navjot Singh</h1>
+                    <ToggleSwitch isOn={theme === 'dark'} handleToggle={toggleTheme} />
                 </div>
                 <div className="menu-icon" onClick={toggleNavbar}>
                     <i className={isOpen ? 'fas fa-times' : 'fas fa-bars'} />
