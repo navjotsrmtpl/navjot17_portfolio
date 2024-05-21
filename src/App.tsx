@@ -9,6 +9,8 @@ import Experience from './components/Experience/Experience';
 import Contact from './components/Contact/Contact';
 import Project from './components/Projects/Project';
 import { ThemeProvider } from './components/context/ThemeProvider';
+import Footer from './components/Footer/Footer';
+
 
 interface ThemeContextType {
   theme: string;
@@ -35,6 +37,7 @@ function App() {
         <Project />
         <Skills />
         <Contact />
+        <Footer />
       </div>
     </ThemeProvider>
   );
