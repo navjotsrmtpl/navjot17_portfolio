@@ -141,3 +141,48 @@
         margin: 20px;
       }
 }   
+
+@media screen and (max-width: 992px) {
+  #projects{
+    margin: 4rem 10px 0px 10px;
+}
+.project_box{
+    display: block;
+}
+.border_box_project{
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: auto;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 20px;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #projects{
+    margin: 4rem 10px 0px 10px;
+}
+.project_box{
+    display: block;
+}
+.border_box_project{
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: auto;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 20px;
+  }
+}

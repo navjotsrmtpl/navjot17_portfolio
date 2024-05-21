@@ -20,6 +20,7 @@
 
     #contact{
         margin: 4rem 10px 0px 10px;
+        word-break: break-all;
     }
 
     
