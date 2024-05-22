@@ -48,8 +48,10 @@
     .contact-btn{
         border: transparent;
         margin-left: 2px;
-       
-       
+    
+    }
+    .font-wt{
+        font-size: 12px;
     }
 
     .contact-style{
