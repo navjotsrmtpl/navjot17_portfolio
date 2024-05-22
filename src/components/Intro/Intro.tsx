@@ -57,7 +57,9 @@ function Intro() {
                 <h1 className='title'>Navjot Singh</h1>
                 <p className='designation'>Senior UI Developer</p>
                 <div className='btnContainer'>
-                    <button className='btn' onClick={handleDownload}>Download CV</button>
+                    <div className='btn-border'>
+                        <button className='btn' onClick={handleDownload}>Download CV</button>
+                    </div>
                 </div>
                 <div className='socials-container'>
                     <img src={linkdin} alt='linkdin' className="icon" onClick={() => handleSocialIcons('linkdin')} />

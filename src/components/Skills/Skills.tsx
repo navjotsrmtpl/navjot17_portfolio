@@ -54,9 +54,20 @@ function Skills() {
 
     return (
         <section id="skills">
-            <h1 className='heading'>Skills</h1>
-            <div className="carousel-container"> {cards.map(card => (<div key={card.id} className="card"> <h3 className='text_center'>{card.title}</h3> <p className='text_center'>{card.description}</p> </div>))} </div>
+            <h1 className="heading">Skills</h1>
+            <div className="carousel-container">
+                {cards.map(card => (
+                    <div key={card.id} className="card-border">
+                        <div className="card">
+                            <h3 className="text_center">{card.title}</h3>
+                            <p className="text_center">{card.description}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </section>
+
+
     )
 }
 

@@ -10,10 +10,10 @@ function Project() {
         setFlippedCards(newFlippedCards);
     };
     useEffect(() => {
-        const interval = setInterval(() => {
-            setFlippedCards(prevFlippedCards => prevFlippedCards.map(card => !card));
-        }, 5000); // Change the interval time as needed (in milliseconds)
-        return () => clearInterval(interval);
+        // const interval = setInterval(() => {
+        //     setFlippedCards(prevFlippedCards => prevFlippedCards.map(card => !card));
+        // }, 5000); // Change the interval time as needed (in milliseconds)
+        // return () => clearInterval(interval);
     }, []); // Run effect only once when component mounts
 
     const projects = [
@@ -80,30 +80,31 @@ function Project() {
                                 <div className="button-container">
                                     <button className="flipbtn" onClick={() => handleClick(index)}>More</button>
                                 </div>
+                                {/* <div className="flip-card-frontb"></div> */}
                             </div>
                             <div className="flip-card-back">
                                 <div className='flip-card-content'>
                                     <p><strong>About:</strong>{project.about}</p>
-                                    <div>
-                                        {/* <p className='project_title'><strong>App link:-</strong></p> */}
-                                        {project.links.map((link, linkIndex) => (
-                                            (!link.url) ? '' :
-                                                <p key={linkIndex} className='project_title'>
-                                                    <strong>{link.label}:</strong>
-                                                    {!link.url ? "Not available" : <a href={link.url} target='_blank'>{link.url}</a>}
-                                                </p>
-                                        ))}
 
-                                    </div>
+                                    {project.links.map((link, linkIndex) => (
+                                        (!link.url) ? '' :
+                                            <p key={linkIndex} className='project_title'>
+                                                <strong>{link.label}:</strong>
+                                                {!link.url ? "Not available" : <a href={link.url} target='_blank'>{link.url}</a>}
+                                            </p>
+                                    ))}
+
                                     <div style={{ textAlign: 'center' }} className="button-container">
                                         <button className="flipbtn" onClick={() => handleClick(index)}>Back</button>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
+
         </section>
     );
 }
