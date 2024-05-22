@@ -71,11 +71,50 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 3px;
+    /* background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet) 1; */
+    /* background-position: 50% 100%; */
   }
+/* 
+  .flip-card-frontb{
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(270deg, red 0%, green 30.43%,rgb(53, 164, 216) 68.23%, #DB00FF 100%);
+    background-size: 600% 600%;
+    border-radius: 8px;
+    animation: AnimateBorder 4s ease infinite;
+    -webkit-animation: AnimateBorder 4s ease infinite;
+    -moz-animation: AnimateBorder 4s ease infinite;
+    z-index: -1;  
+    transform: translate(-2px, -2px);
+    transition: filter 1s ease-in;
+  }
+  */
+
+
+  @-webkit-keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimateBorder {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+
+    
+}
   
   .flip-card-back {
     position: absolute;
-    width: calc(100% - 4px); /* Adjust width to account for border */
+    /* width: calc(100% - 4px); Adjust width to account for border */
     height: 100%;
     backface-visibility: hidden;
     display: grid;

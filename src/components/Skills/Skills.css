@@ -6,37 +6,57 @@
     scroll-behavior: smooth; /* Optional: Smooth scrolling */
 }
 
-.card {
+@keyframes gradientBorder {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card-border {
     flex: 0 0 auto;
-    width: 300px;
+    width: 308px; /* Adjusted to include the border */
     margin-right: 20px;
+    border-radius: 12px; /* Larger radius to include border */
+    background: linear-gradient(270deg, red 0%, green 30.43%,rgb(53, 164, 216) 68.23%, #DB00FF 100%);
+    background-size: 200% 200%;
+    animation: gradientBorder 5s ease infinite;
+    padding: 4px; /* Space for the border */
+    box-sizing: border-box; /* Include padding in the element's width and height */
+}
+
+.card {
     background-color: #ffffff;
-    border: 1px solid #dddddd;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure the card takes full width inside the border */
+    height: 100%; /* Ensure the card takes full height inside the border */
 }
 
-/* Ensure last card doesn't have right margin */
-.card:last-child {
-    margin-right: 0;
-}
-.text_center{
+.text_center {
     text-align: center;
 }
 
 @media screen and (max-width:768px) {
-
     #skills{
         margin: 4rem 10px 0px 10px;
     }
 
-    .carousel-container{
+    .carousel-container {
         display: block;
+        overflow-x: auto; /* Enable horizontal scrolling */
         width: 100%;
+        padding: 20px 0;
+        scroll-behavior: smooth; /* Optional: Smooth scrolling */
     }
-    .card{
+    .card-border{
+        margin: 0 0 10px 0px;
         width: 100%;
-    margin: 0 0 10px 0;
     }
 }
