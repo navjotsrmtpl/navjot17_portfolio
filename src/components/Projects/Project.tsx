@@ -10,10 +10,10 @@ function Project() {
         setFlippedCards(newFlippedCards);
     };
     useEffect(() => {
-        // const interval = setInterval(() => {
-        //     setFlippedCards(prevFlippedCards => prevFlippedCards.map(card => !card));
-        // }, 5000); // Change the interval time as needed (in milliseconds)
-        // return () => clearInterval(interval);
+        const interval = setInterval(() => {
+            setFlippedCards(prevFlippedCards => prevFlippedCards.map(card => !card));
+        }, 5000); // Change the interval time as needed (in milliseconds)
+        return () => clearInterval(interval);
     }, []); // Run effect only once when component mounts
 
     const projects = [
