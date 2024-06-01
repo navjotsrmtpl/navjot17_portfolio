@@ -27,8 +27,8 @@
   .toggle-switch-label:before {
     content: '';
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
     margin: 1px;
     background: #fff;
     position: absolute;

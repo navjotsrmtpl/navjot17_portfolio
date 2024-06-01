@@ -1,8 +1,9 @@
 import React from 'react'
 import './Intro.css';
-import logo from '../../assets/navjot.png'
-import linkdin from '../../assets/linkdin.png'
-import github from '../../assets/github.png'
+import logo from '../../assets/navjot.png';
+import linkdin from '../../assets/linkdin.png';
+import github from '../../assets/github.png';
+import Typewriter from 'typewriter-effect';
 
 function Intro() {
 
@@ -53,9 +54,25 @@ function Intro() {
 
             <div className='section__text' >
 
-                <p className='section__text__p1'>Hello, I'm</p>
+                <p className='section__text__p1'>
+                    <Typewriter
+                        options={{
+                            strings: ["Hello I'm"],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                </p>
                 <h1 className='title'>Navjot Singh</h1>
-                <p className='designation'>Senior UI Developer</p>
+                <p className='designation'>
+                    <Typewriter
+                        options={{
+                            strings: ['Senior UI Developer'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                </p>
                 <div className='btnContainer'>
                     <div className='btn-border'>
                         <button className='btn' onClick={handleDownload}>Download CV</button>
