@@ -28,7 +28,6 @@ function Experience() {
 
                 <h1 className='heading'>Experience</h1>
                 <div className='experience_box'>
-
                     <div className="border_box_exp">
                         <h3 className='wattmonk'>
                             <span><img src="https://cdn.prod.website-files.com/5cb6a396e13945f2ca46a56f/624afde7a2094ea6b50962c3_spg_bar_rgb_pos.png" alt="S & P Global" height='25' width="58" /></span>
