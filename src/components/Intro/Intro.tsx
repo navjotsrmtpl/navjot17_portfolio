@@ -10,7 +10,7 @@ function Intro() {
 
     const handleDownload = () => {
         // Path to the PDF file in the public folder
-        const pdfPath = 'https://github.com/navjotsrmtpl/navjot17_portfolio/blob/navjot/public/Navjot2024_Angular.pdf';
+        const pdfPath = 'https://github.com/navjotsrmtpl/navjot17_portfolio/blob/navjot/public/navjot2025-26.pdf';
 
         // Create a link element
         const link = document.createElement('a');
