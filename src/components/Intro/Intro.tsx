@@ -17,7 +17,7 @@ function Intro() {
         // Set the href attribute to the PDF path
         link.href = pdfPath;
         // Set the download attribute to force download
-        link.setAttribute('download', 'navjot.pdf');
+        link.setAttribute('download', 'navjot2025-26.pdf');
         // Hide the link
         link.style.display = 'none';
         // Append the link to the body
