@@ -10,14 +10,14 @@ function Intro() {
 
     const handleDownload = () => {
         // Path to the PDF file in the public folder
-        const pdfPath = 'https://github.com/navjotsrmtpl/navjot17_portfolio/blob/navjot/public/navjot2025-26.pdf';
+        const pdfPath = 'https://github.com/navjotsrmtpl/navjot17_portfolio/raw/gh-pages/navjot2025-26.pdf';
 
         // Create a link element
         const link = document.createElement('a');
         // Set the href attribute to the PDF path
         link.href = pdfPath;
         // Set the download attribute to force download
-        link.setAttribute('download', 'navjot2025-26.pdf');
+        link.setAttribute('download', 'navjot.pdf');
         // Hide the link
         link.style.display = 'none';
         // Append the link to the body
