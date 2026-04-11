@@ -1,12 +1,7 @@
-#intro{
+#intro {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 85vh;
-    background: #ffff;
-}
-
-#intro {
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
@@ -14,76 +9,60 @@
     min-height: fit-content;
 }
 
-  
-  .intro-section__left {
-    display: flex;
-    justify-content: space-evenly; /* Center the image horizontally */
-    align-self: center; /* Center the image vertically */
-  }
-  
-  .section__pic-container {
-
+.section__pic-container {
     align-self: center;
+}
 
-  }
-  .section__pic-container img{
+.section__pic-container img {
     border-radius: 50%;
     height: 400px;
     width: 400px;
     margin: auto 0;
-   
-  }
-  
-  .intro-section__right {
-    display: flex;
-    justify-content: left; /* Center the text horizontally */
-    align-items: center; /* Center the text vertically */
-  }
-  
-  .section__text__p1 {
+}
+
+.section__text {
+    font-size: 1.5em;
+    align-self: center;
+}
+
+.section__text__p1 {
     font-size: 1.5em;
     text-align: center;
     color: rgb(85, 85, 85);
-  }
+}
 
-  .section__text{
-    font-size: 1.5em;
-    align-self: center;
-    
-  }
-  .title{
+.title {
     font-size: 3rem;
     text-align: center;
-    margin:  0;
-  }
+    margin: 0;
+}
 
-  .designation{
+.designation {
     font-size: 2rem;
     text-align: center;
     color: rgb(85, 85, 85);
-  }
+}
 
-  .socials-container{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-
-  }
-  .icon {
-    height: 40px;
-    width: 40px;
-    margin: 10px;
-  }
-
-  .btnContainer{
+.btnContainer {
     padding: 0.5rem;
     display: flex;
     justify-content: center;
-   
-  }
+}
 
-  .btn{
+.btn-border {
+    border-radius: 20px;
+}
+
+.btn-border::before {
+    content: '';
+    display: block;
+    border-radius: 8px;
+    background: linear-gradient(270deg, rgb(149, 196, 55) 0%, green 30.43%, rgb(53, 164, 216) 68.23%, #6b18f0);
+    background-size: 200% 200%;
+    animation: gradientBorder 5s ease infinite;
+}
+
+.btn {
     padding: 0.8rem;
     border-radius: 3rem;
     background: #111;
@@ -91,126 +70,107 @@
     width: 14rem;
     cursor: pointer;
     border: 1px solid;
-  }
+}
 
-  .btn-border{
-    /* width: 91%; */
-    /* padding: 2.5px; */
-    /* box-sizing: border-box; */
-    border-radius: 20px;
-    /* background: linear-gradient(270deg, rgb(149, 196, 55) 0%, green 30.43%,rgb(53, 164, 216) 68.23%, #6b18f0 100%);
-    background-size: 200% 200%;
-    animation: gradientBorder 5s ease infinite; */
-  }
-
-  .btn-border::before {
-    content: '';
-    display: block;
-    border-radius: 8px; /* Adjusted to match button's border-radius */
-    background: linear-gradient(270deg, rgb(149, 196, 55) 0%, green 30.43%,rgb(53, 164, 216) 68.23%, #6b18f0);
-    background-size: 200% 200%;
-    animation: gradientBorder 5s ease infinite;
-  }
-
-  .btn:hover {
-    background-color: #f0f0f0; 
+.btn:hover {
+    background-color: #f0f0f0;
     box-shadow: 0px 0px 10px rgba(149, 196, 55, 0.7), 0px 0px 10px rgba(0, 128, 0, 0.7), 0px 0px 10px rgba(53, 164, 216, 0.7), 0px 0px 10px rgba(107, 24, 240, 0.7);
 }
 
-  @media screen and (max-width: 768px) {
-    .section__pic-container img{
-      border-radius: 50%;
-      height: 150px;
-      width: 150px;
-      margin: auto 0;
-     
+.socials-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    #intro {
+        margin: 0 3rem;
+        gap: 3rem;
     }
-    /* .btn-border{
-      width: 36%;
-    } */
+
+    .section__pic-container img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .designation {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    #intro {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 5rem 1rem 2rem;
+        gap: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .section__pic-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section__pic-container img {
+        height: 160px;
+        width: 160px;
+    }
+
+    .section__text {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 0;
+    }
+
     .section__text__p1 {
-      font-size: 18px;
-      text-align: center;
-      color: rgb(85, 85, 85);
-    }
-    .section__text{
-      font-size: 18px;
-      align-self: center;
-      margin-top: 2rem;
-    }
-    .title{
-      font-size: 26px;
-      text-align: center;
-    }
-  
-    .designation{
-      font-size: 18px;
-      text-align: center;
-      color: rgb(85, 85, 85);
+        font-size: 1.1rem;
     }
 
-    .btnContainer{
-      padding: 0.5rem;
-      display: flex;
-      justify-content: center;
-    }
-  
-    .btn{
-      width: 8rem;
-      font-size: 12px;
-      padding: 10px;
-      cursor: pointer;
+    .title {
+        font-size: 1.8rem;
     }
 
-    .icon{
-      height: 30px;
-    width: 30px;
-    margin: 5px;
+    .designation {
+        font-size: 1.1rem;
     }
 
-    #intro{
-      height: 44vh;
-      display: contents;
-      margin: 4rem 10px 0px 10px;
+    .btn {
+        width: 10rem;
+        font-size: 13px;
+        padding: 10px;
     }
 
-    .section__pic-container{
-      display: flex;
-      justify-content: center;
+    .icon {
+        height: 30px;
+        width: 30px;
+        margin: 6px;
+    }
+}
+
+/* Small mobile */
+@media screen and (max-width: 380px) {
+    .title {
+        font-size: 1.5rem;
     }
 
-  }
-
-  @media screen and (max-width: 480px) {
-    .btn-border {
-      width: 32%; /* Adjust as needed */
+    .btn {
+        width: 8.5rem;
+        font-size: 12px;
     }
-  }
-  
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    .btn-border {
-      width: 39%; /* Adjust as needed */
-    }
-  }
-  
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .btn-border {
-      width: 100%; /* Adjust as needed */
-    }
-  }
-  
-  @media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .btn-border {
-      width: 91%; /* Adjust as needed */
-    }
-  }
-  
-  @media screen and (min-width: 1281px) {
-    .btn-border {
-      width: 91%; /* Adjust as needed */
-    }
-  }
-  
-
-
-
+}

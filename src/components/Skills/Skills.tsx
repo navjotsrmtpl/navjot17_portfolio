@@ -1,55 +1,25 @@
 import React from 'react';
 import './Skills.css';
-import Slider, { Settings } from 'react-slick';
 
-interface Card {
+interface SkillCategory {
     id: number;
     title: string;
     description: string;
+    isAI?: boolean;
 }
 
 function Skills() {
-    const settings: Settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
-
-    const cards: Card[] = [
-        { id: 1, title: "Language", description: "TypeScript, JavaScript, Restful API in Nodejs, HTML, CSS3, Bootstrap, MEAN, MERN" },
-        { id: 2, title: "Framework", description: "Angular 8/9/11/12/13/14/15, ionic framework, node, strapi, React" },
-        { id: 3, title: "Database", description: "MongoDB, Mysql" },
-        { id: 4, title: "Software and Tools", description: "Git, Bitbucket, Visual Studio Code, AWS, Digital ocean, Playwright, Codium AI" },
-        { id: 5, title: "Third Party Integration", description: "PrimeNg, Ngrx, Rxjs, Firebase, github Action CI/CD, Azure" },
-
+    const cards: SkillCategory[] = [
+        { id: 1, title: "Frontend", description: "React, Next.js, Angular (4–14), TypeScript, JavaScript, HTML5, CSS3, SCSS" },
+        { id: 2, title: "State Management", description: "RxJS, NgRx, Redux, Tanstack Query" },
+        { id: 3, title: "UI Libraries", description: "Angular Material, Chakra UI, Kendo UI, Bootstrap, PrimeNG" },
+        { id: 4, title: "AI & Copilots", description: "Claude Sonnet, OpenAI / ChatGPT, GitHub Copilot, Cursor, Replit, AI Agents", isAI: true },
+        { id: 5, title: "Backend", description: "Node.js, Express, .NET, REST APIs, Strapi" },
+        { id: 6, title: "Database", description: "MongoDB, MySQL, SQL Server, Firebase" },
+        { id: 7, title: "Cloud & DevOps", description: "AWS (EC2, S3, Load Balancer, Fleet), Docker, Digital Ocean, Vagrant, Azure DevOps, CI/CD" },
+        { id: 8, title: "Mobile", description: "React Native, Ionic 3–6, Capacitor, Cordova" },
+        { id: 9, title: "Payments & Integrations", description: "Stripe, Razorpay, PayPal, CometChat, Firebase" },
+        { id: 10, title: "Dev Tools", description: "Git, Jira, Azure DevOps, Jest, Karma, Jasmine, ZOHO, Bitbucket" },
     ];
 
     return (
@@ -57,7 +27,7 @@ function Skills() {
             <h1 className="heading">Skills</h1>
             <div className="carousel-container">
                 {cards.map(card => (
-                    <div key={card.id} className="card-border">
+                    <div key={card.id} className={`card-border${card.isAI ? ' card-ai' : ''}`}>
                         <div className="card">
                             <h3 className="text_center">{card.title}</h3>
                             <p className="text_center">{card.description}</p>
@@ -66,8 +36,6 @@ function Skills() {
                 ))}
             </div>
         </section>
-
-
     )
 }
 
