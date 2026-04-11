@@ -1,37 +1,79 @@
-section{
-  padding-top: 4vh;
-  margin: 0 5rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-  
+section {
+    padding-top: 4vh;
+    margin: 0 5rem;
+    box-sizing: border-box;
+    min-height: fit-content;
 }
 
-@media screen and (max-width:768px) {
-    .heading{
-      font-size: 2rem;
+.heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+body.light {
+    background-color: #fff;
+    color: #111;
+}
+
+body.dark {
+    background-color: #111;
+    color: #f0f0f0;
+}
+
+body.dark .border_box,
+body.dark .border_box_exp,
+body.dark .proj-card,
+body.dark .contact_section {
+    border-color: #333;
+}
+
+body.dark .proj-stat,
+body.dark .proj-tech,
+body.dark .proj-badge-company {
+    background: #1e1e1e;
+    color: #ccc;
+}
+
+body.dark .proj-card-inner {
+    border-top-color: #333;
+}
+
+body.dark .proj-about,
+body.dark .proj-card-role,
+body.dark .exp-period {
+    color: #aaa;
+}
+
+body.dark .navbar {
+    background: #1a1a1a;
+    border-bottom-color: #333;
+}
+
+body.dark .about_summary {
+    background: rgba(29, 158, 117, 0.08);
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    section {
+        margin: 0 2rem;
+    }
+
+    .heading {
+        font-size: 2rem;
     }
 }
 
-/* #light{
-  background-color: red;
-}
+/* Mobile */
+@media screen and (max-width: 768px) {
+    section {
+        margin: 4rem 1rem 1rem;
+        padding-top: 1rem;
+    }
 
-#dark{
-  background-color: blue;
-} */
-
-/* default light theme */
-body.light {
-  *{
-    background-color: white !important;
-    color: black !important;
-  }
+    .heading {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
 }
-/* dark theme */
-body.dark {
-  *{
-    background-color: black !important;
-    color: white !important;
-  }
-}
-

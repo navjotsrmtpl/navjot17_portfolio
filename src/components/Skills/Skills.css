@@ -1,62 +1,85 @@
-.carousel-container {
-    display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    width: 100%;
-    padding: 20px 0;
-    scroll-behavior: smooth; /* Optional: Smooth scrolling */
+#skills {
+    padding-top: 4vh;
+    margin: 0 5rem;
+    box-sizing: border-box;
 }
 
-@keyframes gradientBorder {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.carousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 1rem;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .card-border {
-    flex: 0 0 auto;
-    width: 308px; /* Adjusted to include the border */
-    margin-right: 20px;
-    border-radius: 12px; /* Larger radius to include border */
-    background: linear-gradient(270deg, red 0%, green 30.43%,rgb(53, 164, 216) 68.23%, #DB00FF 100%);
-    background-size: 200% 200%;
-    animation: gradientBorder 5s ease infinite;
-    padding: 4px; /* Space for the border */
-    box-sizing: border-box; /* Include padding in the element's width and height */
+    border: 1.5px solid #ccc;
+    border-radius: 12px;
+    padding: 4px;
+    width: 210px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-border:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.card-ai {
+    border-color: #1D9E75;
+    background: rgba(29, 158, 117, 0.05);
 }
 
 .card {
-    background-color: #ffffff;
+    padding: 1rem;
     border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ensure the card takes full width inside the border */
-    height: 100%; /* Ensure the card takes full height inside the border */
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.card-ai h3 {
+    color: #1D9E75;
 }
 
 .text_center {
     text-align: center;
+    font-size: 13px;
+    line-height: 1.6;
 }
 
-@media screen and (max-width:768px) {
-    #skills{
-        margin: 4rem 10px 0px 10px;
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    #skills {
+        margin: 0 2rem;
+    }
+
+    .card-border {
+        width: calc(50% - 16px);
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    #skills {
+        margin: 4rem 1rem 1rem;
+        padding-top: 1rem;
     }
 
     .carousel-container {
-        display: block;
-        overflow-x: auto; /* Enable horizontal scrolling */
-        width: 100%;
-        padding: 20px 0;
-        scroll-behavior: smooth; /* Optional: Smooth scrolling */
+        gap: 12px;
+        padding: 0.5rem;
     }
-    .card-border{
-        margin: 0 0 10px 0px;
+
+    .card-border {
         width: 100%;
+    }
+
+    .card {
+        padding: 0.875rem;
     }
 }

@@ -1,63 +1,85 @@
-.contact_section{
+#contact {
+    padding-top: 4vh;
+    margin: 0 5rem;
+    box-sizing: border-box;
+}
+
+.contact_section {
     border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 2rem;
-    justify-content: space-around;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
     text-align: center;
 }
 
-#contact{
-    padding: 1rem;
-    /* margin: 0 25rem; */
-}
-
-.pading_txt{
-    padding: 0.3rem;
+.pading_txt {
+    padding: 0.4rem 0;
     cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
 }
 
-.contact-btn{
+.font-wt {
+    font-weight: 600;
+}
+
+.link-style {
+    cursor: pointer;
+    color: #1D9E75;
+}
+
+.link-style:hover {
+    text-decoration: underline;
+}
+
+.contact-btn {
     border: transparent;
+    background: transparent;
     margin-left: 2px;
-    /* font-size: 10px; */
+    cursor: pointer;
+    padding: 2px 4px;
 }
-.contact-style{
+
+.contact-style {
     font-size: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -22px;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
 }
 
-.contact-style{
-    position: 'absolute';
-     left: '38px';
-      top: '0';
-      transform: 'translateX(-50%)';
-      background-color: 'rgba(0, 0, 0, 0.7)';
-       color: '#fff';
-        padding: '2px';
-         border: '1px solid #111';
-        border-radius: '5px';
-        margin-left: '2px';
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    #contact {
+        margin: 0 2rem;
+    }
 }
 
-@media screen and (max-width:768px) {
+/* Mobile */
+@media screen and (max-width: 768px) {
+    #contact {
+        margin: 4rem 1rem 2rem;
+        padding-top: 1rem;
+    }
 
-    #contact{
-        margin: 4rem 10px 0px 10px;
+    .contact_section {
+        padding: 1.25rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .pading_txt {
+        font-size: 13px;
         word-break: break-all;
+        justify-content: center;
     }
-
-    .contact-btn{
-        border: transparent;
-        margin-left: 2px;
-    
-    }
-    .font-wt{
-        font-size: 12px;
-    }
-
-    .contact-style{
-        font-size: 6px;
-        position: static;
-    }
-    
-
 }
