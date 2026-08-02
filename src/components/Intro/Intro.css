@@ -74,6 +74,7 @@
 
 .btn:hover {
     background-color: #f0f0f0;
+    color: #111;
     box-shadow: 0px 0px 10px rgba(149, 196, 55, 0.7), 0px 0px 10px rgba(0, 128, 0, 0.7), 0px 0px 10px rgba(53, 164, 216, 0.7), 0px 0px 10px rgba(107, 24, 240, 0.7);
 }
 
