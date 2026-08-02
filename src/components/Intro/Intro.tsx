@@ -11,7 +11,7 @@ function Intro() {
     const { detailed } = getExperience();
 
     const handleDownload = () => {
-        const pdfPath = 'https://github.com/navjotsrmtpl/navjot17_portfolio/raw/gh-pages/navjot2025-26.pdf';
+        const pdfPath = 'https://raw.githubusercontent.com/navjotsrmtpl/navjot17_portfolio/412d87ec2f20b1a9596064e34e9314b614b9bbf1/public/navjot2025-26.pdf';
         const link = document.createElement('a');
         link.href = pdfPath;
         link.setAttribute('download', 'Navjot_Singh_Resume_2025-26.pdf');
