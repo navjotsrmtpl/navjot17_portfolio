@@ -80,7 +80,47 @@ const projects: ProjectItem[] = [
         tech: ["Angular 9", "Ionic 5", "Cordova", "Node.js", "MongoDB", "AWS", "MEAN Stack"],
         about: "Recycling rewards app — users photograph recycled products to earn points. Admin-verified and redeemable as cash, gamifying sustainable recycling habits.",
         links: []
-    }
+    },
+       {
+        title: "Dodge Construction Admin Platform",
+        company: "Wattmonk Technologies",
+        role: "Full Stack Developer",
+        isAI: true,
+        tags: ["web"],
+        tech: ["Angular 19", "Node.js", "MongoDB", "AWS", "MEAN Stack"],
+        about: "Migration of project from angular8 to angular 20. Admin platform for Dodge Construction to manage their construction projects, users, and payments. Integrated assistant for AI-assisted features. Reduced build time and improved performance by 30% through code optimization and lazy loading.",
+        links: []
+    },
+     {
+        title: "Investment Portfolio Tracker",
+        company: "Self Project",
+        role: "Full Stack Developer",
+        isAI: false,
+        tags: ["web", "mobile"],
+        tech: ["React", "Node.js", "MongoDB", "MERN Stack"],
+        about: "Track and manage your investment portfolio with real-time updates and analytics. upload your invest with excel sheet and get data synced with dashboard.",
+        links: [{ label: "web", url: "https://financetraker.netlify.app/" }]
+    },
+     {
+        title: "AI generated forms",
+        company: "Self Project",
+        role: "Full Stack Developer",
+        isAI: true,
+        tags: ["web", "mobile"],
+        tech: ["React", "Node.js", "MongoDB", "MERN Stack", "OpenAI", "ollama"],
+        about: "Generate forms using AI with natural language processing and machine learning algorithms.s",
+        links: [{ label: "web", url: "https://aiform95.netlify.app/" }]
+    },
+      {
+        title: "Resume Builder with ATS Optimization",
+        company: "Self Project",
+        role: "Full Stack Developer",
+        isAI: true,
+        tags: ["web", "mobile"],
+        tech: ["Next.js", "MongoDB", "MEAN Stack", "OpenAI", "Claude Sonnet"],
+        about: "Inline Edit or create you resume with templates and optimize it for ATS (Applicant Tracking System) to increase your chances of getting noticed by recruiters. Compare ATS scores with job descriptions and get suggestions for improvement and download your resume in PDF and word format.",
+        links: [{ label: "web", url: "https://resumebuilder-kappa-three.vercel.app/" }]
+    },
 ];
 
 const FILTERS: { key: FilterType; label: string }[] = [
