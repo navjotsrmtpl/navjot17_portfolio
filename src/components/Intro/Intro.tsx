@@ -48,8 +48,8 @@ function Intro() {
                     <Typewriter
                         options={{
                             strings: [
-                                'Senior Frontend Engineer',
-                                'React · Next.js · Angular',
+                                'Senior Software Engineer',
+                                'React · Next.js · Angular,Node.js',
                                 'AI-Powered Engineer',
                                 detailed,
                             ],
